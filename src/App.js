@@ -1,11 +1,22 @@
+import React from 'react'
 import './App.scss'
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  constructor() {
+    super()
+
+    this.state {
       
-    </div>
-  );
+    }
+  }
+
+  render() {
+    return (
+      <main>
+        <h2>Pomodoro Clock</h2>
+      </main>
+    )
+  }
 }
 
 export default App
