@@ -1,14 +1,30 @@
 import React from "react"
 
 function BreakLength(props) {
+
+    function decreaseCounter() {
+        if(props.breakLength === 1) {
+            return
+        }
+
+        props.decreaseBreak()
+    }
     
+    function inreaseCounter() {
+        if(props.breakLength === 60) {
+            return
+        }
+
+        props.increaseBreak()
+    }
+
     return (
         <section>
             <h4>Break Length</h4>
             <section className="interval-container">
-                <button>Down</button>
+                <button onClick={decreaseCounter}>Down</button>
                 <p className="interval-length">{props.breakLength}</p>
-                <button>Up</button>
+                <button onClick={inreaseCounter}>Up</button>
             </section>
         </section>
     )
