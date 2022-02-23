@@ -39,7 +39,8 @@ class App extends React.Component {
   onIncreaseSessionLength() {
     this.setState((prevState) => {
       return {
-        sessionLength: prevState.sessionLength + 1
+        sessionLength: prevState.sessionLength + 1,
+        timerMinute: prevState.sessionLength + 1
       }
     })
   }
@@ -47,7 +48,8 @@ class App extends React.Component {
   onDecreaseSessionLength() {
     this.setState((prevState) => {
       return {
-        sessionLength: prevState.sessionLength - 1
+        sessionLength: prevState.sessionLength - 1,
+        timerMinute: prevState.sessionLength - 1
       }
     })
   }
