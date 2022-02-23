@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 main {
     display: flex;
     flex-direction: column;
     height: 90vh;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 h2 {
