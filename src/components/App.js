@@ -80,7 +80,9 @@ class App extends React.Component {
 
   onResetTimer() {
     this.setState({
-      timerMinute: this.state.sessionLength
+      breakLength: 5,
+      sessionLength: 25,
+      timerMinute: 25
     })
   }
 
