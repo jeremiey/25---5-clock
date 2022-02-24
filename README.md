@@ -2,6 +2,8 @@
 
 > Live Preview: <https://jeremiey.github.io/pomodoro-clock/>
 
+![image](https://user-images.githubusercontent.com/87664239/155555101-d24fb8ae-ddc5-4295-830a-7c6a9e4dc549.png)
+
 **Objective**: Build a CodePen.io app that is functionally similar to this: <https://codepen.io/freeCodeCamp/full/XpKrrW>.
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
