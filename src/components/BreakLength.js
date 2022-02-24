@@ -18,13 +18,13 @@ function BreakLength(props) {
 
 	return (
 		<section>
-			<h4>Break Length</h4>
+			<h4 id="break-label">Break Length</h4>
 			<section className="interval-container">
-				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter} id="break-decrement">
 					Down
 				</button>
-				<p className="interval-length">{props.breakLength}</p>
-				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>
+				<p className="interval-length" id="break-length">{props.breakLength}</p>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter} id="break-increment">
 					Up
 				</button>
 			</section>

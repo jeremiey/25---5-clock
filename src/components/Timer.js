@@ -74,23 +74,25 @@ class Timer extends React.Component {
 		return (
 			<section>
 				<section className='timer-container'>
-					<h4>{this.state.isSession === true ? 'Session' : 'Break'}</h4>
-					<span className='timer'>{this.props.timerMinute}</span>
-					<span className='timer'>:</span>
-					<span className='timer'>
-								{
-									this.state.timerSecond === '0' 
-									? '00' 
-									: this.state.timerSecond < '10' 
-									? '0' + this.state.timerSecond 
-									: this.state.timerSecond
-								}
-					</span>
+					<h4 id="timer-label">{this.state.isSession === true ? 'Session' : 'Break'}</h4>
+					<section id="time-left">
+						<span className='timer'>{this.props.timerMinute}</span>
+						<span className='timer'>:</span>
+						<span className='timer'>
+									{
+										this.state.timerSecond === '0' 
+										? '00' 
+										: this.state.timerSecond < '10' 
+										? '0' + this.state.timerSecond 
+										: this.state.timerSecond
+									}
+						</span>
+					</section>
 				</section>
 				<section className="timer-actions">
-					<button disabled={this.props.isPlay === true ? "disabled" : ""} onClick={this.playTimer}>Play</button>
-					<button onClick={this.stopTimer}>Stop</button>
-					<button onClick={this.resetTimer}>Refresh</button>
+					<button disabled={this.props.isPlay === true ? "disabled" : ""} onClick={this.playTimer} id="start_stop">Play</button>
+					<button onClick={this.stopTimer} id="start_stop">Stop</button>
+					<button onClick={this.resetTimer} id="reset">Reset</button>
 				</section>
 			</section>
 		)
