@@ -20,7 +20,6 @@ class App extends React.Component {
     this.onDecreaseSessionLength = this.onDecreaseSessionLength.bind(this)
     this.onUpdateTimerMinute = this.onUpdateTimerMinute.bind(this)
     this.onToggleInterval = this.onToggleInterval.bind(this)
-    this.onResetTimer = this.onResetTimer.bind(this)
   }
 
   onIncreaseBreakLength() {

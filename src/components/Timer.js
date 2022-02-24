@@ -13,7 +13,6 @@ class Timer extends React.Component {
 		this.playTimer = this.playTimer.bind(this)
 		this.decreaseTimer = this.decreaseTimer.bind(this)
 		this.stopTimer = this.stopTimer.bind(this)
-		this.resetTimer = this.resetTimer.bind(this)
 	}
 
 	playTimer() {
