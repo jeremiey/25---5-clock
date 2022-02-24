@@ -39,7 +39,7 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 **User Story #14**: When I click the element with the id of `session-decrement`, the value within `id="session-length"` decrements by a value of 1, and I can see the updated value.
 
 **User Story #15**: When I click the element with the id of `session-increment`, the value within `id="session-length"` increments by a value of 1, and I can see the updated value.
-`
+
 **User Story #16**: I should not be able to set a session or break length to <= 0.
 
 **User Story #17**: I should not be able to set a session or break length to > 60.
