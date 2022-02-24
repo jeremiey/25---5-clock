@@ -10,11 +10,13 @@ class Timer extends React.Component {
 			intervalId: 0
 		}
 
-		this.play = this.play.bind(this)
+		this.playTimer = this.playTimer.bind(this)
 		this.decreaseTimer = this.decreaseTimer.bind(this)
+		this.stopTimer = this.stopTimer.bind(this)
+		this.resetTimer = this.resetTimer.bind(this)
 	}
 
-	play() {
+	playTimer() {
 		let intervalId = setInterval(this.decreaseTimer, 1000)
 
 		this.setState({
@@ -39,6 +41,10 @@ class Timer extends React.Component {
 		}
 	}
 
+	stopTimer() {
+		clearInterval(this.state.intervalId)
+	}
+
 	render() {
 		return (
 			<section>
@@ -57,9 +63,9 @@ class Timer extends React.Component {
 					</span>
 				</section>
 				<section className="timer-actions">
-					<button onClick={this.play}>Play</button>
-					<button onClick={this.stop}>Stop</button>
-					<button onClick={this.reset}>Refresh</button>
+					<button onClick={this.playTimer}>Play</button>
+					<button onClick={this.stopTimer}>Stop</button>
+					<button onClick={this.resetTimer}>Refresh</button>
 				</section>
 			</section>
 		)
