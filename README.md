@@ -2,7 +2,7 @@
 
 > Live Preview: <https://jeremiey.github.io/pomodoro-clock/>
 
-![image](https://user-images.githubusercontent.com/87664239/155555101-d24fb8ae-ddc5-4295-830a-7c6a9e4dc549.png)
+![image](https://user-images.githubusercontent.com/87664239/155601731-98922adb-f613-4d38-8101-71b0ea5840a6.png)
 
 **Objective**: Build a CodePen.io app that is functionally similar to this: <https://codepen.io/freeCodeCamp/full/XpKrrW>.
 
