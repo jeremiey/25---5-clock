@@ -96,8 +96,8 @@ class App extends React.Component {
         <Timer 
           timerMinute={this.state.timerMinute}
           breakLength={this.state.breakLength}
-          updateTimerMinute={this.state.onUpdateTimerMinute}
-          toggleInterval={this.state.onToggleInterval}
+          updateTimerMinute={this.onUpdateTimerMinute}
+          toggleInterval={this.onToggleInterval}
         />
       </main>
     )
