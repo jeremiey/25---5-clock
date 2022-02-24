@@ -11,7 +11,8 @@ class App extends React.Component {
     this.state = {
       breakLength: 5,
       sessionLength: 25,
-      timerMinute: 25
+      timerMinute: 25,
+      isPlay: false
     }
 
     this.onIncreaseBreakLength = this.onIncreaseBreakLength.bind(this)
@@ -21,6 +22,7 @@ class App extends React.Component {
     this.onUpdateTimerMinute = this.onUpdateTimerMinute.bind(this)
     this.onToggleInterval = this.onToggleInterval.bind(this)
     this.onResetTimer = this.onResetTimer.bind(this)
+    this.onPlayStopTimer = this.onPlayStopTimer.bind(this)
   }
 
   onIncreaseBreakLength() {
@@ -86,28 +88,38 @@ class App extends React.Component {
     })
   }
 
+  onPlayStopTimer(isPlay) {
+    this.setState({
+      isPlay: isPlay
+    })
+  }
+
   render() {
     return (
       <main>
         <h2>25 + 5 Clock</h2>
         <section className="interval-length-container">
           <BreakLength
+            isPlay={this.state.isPlay}
             breakLength={this.state.breakLength}
             increaseBreak={this.onIncreaseBreakLength}
             decreaseBreak={this.onDecreaseBreakLength}
           />
           <SessionLength
+            isPlay={this.state.isPlay}
             sessionLength={this.state.sessionLength} 
             increaseSession={this.onIncreaseSessionLength}
             decreaseSession={this.onDecreaseSessionLength}
           />
         </section>
         <Timer 
+          isPlay={this.state.isPlay}
           timerMinute={this.state.timerMinute}
           breakLength={this.state.breakLength}
           updateTimerMinute={this.onUpdateTimerMinute}
           toggleInterval={this.onToggleInterval}
           resetTimer={this.onResetTimer}
+          onPlayStopTimer={this.onPlayStopTimer}
         />
       </main>
     )

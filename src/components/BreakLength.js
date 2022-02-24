@@ -20,11 +20,11 @@ function BreakLength(props) {
 		<section>
 			<h4>Break Length</h4>
 			<section className="interval-container">
-				<button onClick={decreaseCounter}>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>
 					Down
 				</button>
 				<p className="interval-length">{props.breakLength}</p>
-				<button onClick={increaseCounter}>
+				<button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>
 					Up
 				</button>
 			</section>
